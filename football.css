@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F0E8;
+    margin: 0;
+    padding: 30px 15px;
+    color: #4B3025;
+}
+.container {
+    max-width: 550px;
+    margin: 20px auto;
+    background-color: #FFFCF7;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(76, 49, 35, 0.2);
+}
+.container::before {
+    content: "";
+    display: block;
+    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1522778119026-d647f0596c20");
+    background-size: cover;
+    background-position: center;
+}
+
+h1, p, form {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #5C3A2E;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+p {
+    text-align: center;
+    color: #96715C;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5C3A2E;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border: 1px solid #D6C3B2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #FAF7F2;
+    color: #4B3025;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #795548;
+    box-shadow: 0 0 5px rgba(121, 85, 72, 0.3);
+}
+
+input[type="radio"] {
+    width: auto;
+    accent-color: #795548;
+    margin-right: 5px;
+}
+
+.gender {
+    margin-top: 10px;
+    color: #6F4E37;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: #FFFCF7;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Submit button */
+.submit {
+    background-color: #6F4E37;
+}
+
+.submit:hover {
+    background-color: #4B3025;
+    transform: translateY(-2px);
+}
+
+/* Reset button */
+.reset {
+    background-color: #A0785A;
+}
+
+.reset:hover {
+    background-color: #795548;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container::before {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+.submit:hover {
+    background-color: #4B3025;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(76, 49, 35, 0.3);
+}
+.reset:hover {
+    background-color: #795548;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(76, 49, 35, 0.3);
+}
+button {
+    transition: all 0.3s ease;
+}
